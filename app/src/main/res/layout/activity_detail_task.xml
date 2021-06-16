@@ -36,7 +36,7 @@
             android:ellipsize="end"
             android:maxLines="3"
             android:textColor="@color/white"
-            android:textSize="18sp"
+            android:textSize="20sp"
             android:textStyle="bold"
             tools:text="loren ipsum set dolot almet loren ipsum set dolot almet loren ipsum set dolot almet loren ipsum set dolot almet loren ipsum set dolot almet " />
 
@@ -56,9 +56,19 @@
         android:layout_margin="16dp"
         android:textColor="@color/black"
         android:textSize="16sp"
-        tools:text="loren ipsum set dolot almet loren ipsum set dolot almet loren ipsum set dolot almet loren ipsum set dolot almet loren ipsum set dolot almet loren ipsum set dolot almet"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/fl_header_detail" />
+        app:layout_constraintTop_toBottomOf="@id/fl_header_detail"
+        tools:text="loren ipsum set dolot almet loren ipsum set dolot almet loren ipsum set dolot almet loren ipsum set dolot almet loren ipsum set dolot almet loren ipsum set dolot almet" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_change_todo_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:tint="@color/white"
+        tools:src="@drawable/ic_todo_done_true" />
 </androidx.constraintlayout.widget.ConstraintLayout>

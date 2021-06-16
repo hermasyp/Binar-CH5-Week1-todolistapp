@@ -1,4 +1,4 @@
-package com.catnip.todolistapp.ui.main.adapter
+package com.catnip.todolistapp.ui.todolist.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -9,7 +9,10 @@ Github : https://github.com/hermasyp
  **/
 @Parcelize
 data class Todo(
+    val id : Int,
     val title : String?,
     val desc : String?,
-    val headerImageUrl : String?
+    val headerImageUrl : String?,
+    var isTaskCompleted : Boolean
 ) : Parcelable
+

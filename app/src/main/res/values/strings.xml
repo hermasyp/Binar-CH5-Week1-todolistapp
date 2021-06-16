@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">TodoListApp</string>
+    <string name="app_name">Todo List App</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_tab_todo_undone">Undone Task</string>
+    <string name="title_tab_todo_done">Done Task</string>
+    <string name="text_snackbar_change_status_done">Success set todo status to Done!</string>
+    <string name="text_snackbar_change_status_undone">Success set todo status to Undone!</string>
 </resources>
