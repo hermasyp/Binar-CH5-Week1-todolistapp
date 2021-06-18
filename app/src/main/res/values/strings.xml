@@ -6,4 +6,19 @@
     <string name="title_tab_todo_done">Done Task</string>
     <string name="text_snackbar_change_status_done">Success set todo status to Done!</string>
     <string name="text_snackbar_change_status_undone">Success set todo status to Undone!</string>
+    <string name="text_menu_add_todo">Add New Todo</string>
+    <string name="text_menu_about">About Developer</string>
+    <string name="text_btn_save_todo_form">Save</string>
+    <string name="text_hint_form_header_img_url">Header Image Url</string>
+    <string name="text_hint_form_description">Task Description</string>
+    <string name="text_hint_form_title">Task Title</string>
+    <string name="title_toolbar_todo_form_acitivity">Create New Task</string>
+    <string name="text_error_form_title_todo">Task Title must be filled</string>
+    <string name="text_error_form_desc_todo">Task Description must be filled</string>
+    <string name="text_error_form_header_img_url_todo">Task Header Image Url must be filled</string>
+    <string name="text_toast_save_todo_success">Todo Saved!</string>
+    <string name="text_button_check_repo_about_dialog">Check My Repo!</string>
+    <string name="text_profession_about_dialog">Android Developer @Alodokter</string>
+    <string name="text_name_about_dialog">Muhammad Hermas Yuda Pamungkas</string>
+    <string name="text_title_about_dialog">About Developer</string>
 </resources>

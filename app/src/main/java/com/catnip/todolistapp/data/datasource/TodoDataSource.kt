@@ -55,6 +55,14 @@ class TodoDataSource {
         )
     }
 
+    fun addTodo(todo: Todo){
+        todos.add(todo)
+    }
+
+    fun deleteTodo(targetId: Int){
+        todos.remove(todos.first { it.id == targetId })
+    }
+
     fun changeTodoStatus(targetId : Int){
         todos.first { it.id == targetId }.apply {
             isTaskCompleted = isTaskCompleted.not()

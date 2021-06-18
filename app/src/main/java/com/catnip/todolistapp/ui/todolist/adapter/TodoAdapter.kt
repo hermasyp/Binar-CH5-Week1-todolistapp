@@ -10,7 +10,7 @@ import com.catnip.todolistapp.databinding.ItemTodoBinding
 Written with love by Muhammad Hermas Yuda Pamungkas
 Github : https://github.com/hermasyp
  **/
-class TodoAdapter(val itemClick: (Todo) -> Unit) :
+class TodoAdapter(val itemClick: (Todo) -> Unit,val longClick: (Todo) -> Unit) :
     RecyclerView.Adapter<TodoAdapter.TodoViewHolder>() {
 
     var items : List<Todo> = mutableListOf()
@@ -21,13 +21,18 @@ class TodoAdapter(val itemClick: (Todo) -> Unit) :
 
     class TodoViewHolder(
         private val binding: ItemTodoBinding,
-        private val itemClick: (Todo) -> Unit
+        private val itemClick: (Todo) -> Unit,
+        private val longClick: (Todo) -> Unit
     ) : RecyclerView.ViewHolder(binding.root) {
         fun bindView(item: Todo) {
             with(item) {
                 binding.tvTitleItemTask.text = title
                 itemView.setOnClickListener {
                     itemClick(this)
+                }
+                itemView.setOnLongClickListener {
+                    longClick(this)
+                    true
                 }
             }
         }
@@ -36,7 +41,7 @@ class TodoAdapter(val itemClick: (Todo) -> Unit) :
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): TodoViewHolder {
         //for creating new object of view holder based on items
         val binding = ItemTodoBinding.inflate(LayoutInflater.from(parent.context), parent, false)
-        return TodoViewHolder(binding, itemClick)
+        return TodoViewHolder(binding, itemClick,longClick)
     }
 
     override fun onBindViewHolder(holder: TodoViewHolder, position: Int) {
